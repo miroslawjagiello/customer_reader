@@ -1,0 +1,11 @@
+nr_klienta,nazwa,region,branza,nr_tel,email,dzialalnosc_od,typ_klienta,roczne_przychody,wskaznik_1,wskaznik_2,wskaznik_3,flagi_dodatkowe
+123,Klient1,Slaskie,Budownictwo,555555555,klient1@klien1.pl,2010-01-20,BS_1,990900,412321.22,0.032,1200,0100
+124,Klient2,Zachodnio-pomorskie,Architektura,999999999,klient2@klien2.pl,2010-01-20,DC_1,88990.12,23111.22,0.322,1400,1000
+125,Klient3,Slaskie,Finanse,123123123,klient3@klien3.pl,2010-12-01,OP,123423.43,381731.22,0.89,1120,0000
+126,Klient4,Zachodnio-pomorskie,Projektowanie,142111232,klient4@klient4.pl,2009-11-01,LP,12342.43,38121.22,0.921,1192,0100
+127,Klient5,Malopolskie,Budownictwo,721175333,klient5@klient5.pl,2009-11-01,DC_2,623423.98,32423.23,0.212,1542,1110
+128,Klient6,Malopolskie,Farmacja,752277333,klient6@klient6.pl,2002-11-01,AC_1,6232400,238838.22,0.323,1123,1011
+129,Klient7,Malopolskie,Budownictwo,173477333,klient7@klient7.pl,2006-11-02,DC_2,543212.32,1213422.91,0.983,1121,1001
+130,Klient8,Wielkopolskie,Sprzedaż detaliczna,773477333,klient8@klient8.pl,2012-09-04,AC_1,743212.67,121422.34,0.223,1902,1100
+132,Klient9,Podlaskie,Sprzedaż detaliczna,473477333,klient9@klient9.pl,2012-09-04,OP,108512.11,12422.34,0.802,1123,1011
+133,Klient10,Elektrownie,Sprzedaż detaliczna,973477993,klient10@klient10.pl,2012-09-04,DC_2,278912.67,12192.22,0.21,1012,1001
