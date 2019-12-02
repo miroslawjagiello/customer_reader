@@ -2,9 +2,9 @@ package io.jagiello.scheduler;
 
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
-import io.jagiello.domain.Customer;
-import io.jagiello.domain.CustomerCsv;
-import io.jagiello.domain.CustomerCsvToCustomerMapper;
+import io.jagiello.domain.*;
+import io.jagiello.domain.mappers.CustomerCsvToCustomerViewMapper;
+import io.jagiello.domain.mappers.CustomerViewToCustomerMapper;
 import io.jagiello.repositories.CustomerRepository;
 import io.jagiello.services.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,9 +62,9 @@ public class Scheduler {
 
         while (csvUserIterator.hasNext()) {
             CustomerCsv customerCsv = csvUserIterator.next();
-            Long customerId = Long.valueOf(customerCsv.getId());
-            boolean newCustomer = customerRepository.findById(customerId).isEmpty();
-            Customer customer = CustomerCsvToCustomerMapper.toModel(customerCsv);
+            CustomerView customerView = CustomerCsvToCustomerViewMapper.toView(customerCsv);
+            boolean newCustomer = customerRepository.findById(customerView.getId()).isEmpty();
+            Customer customer = CustomerViewToCustomerMapper.toModel(customerView);
             if(newCustomer){
                 emailService.sendEmail(customer);
             }
